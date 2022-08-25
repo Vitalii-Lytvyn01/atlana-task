@@ -28,9 +28,7 @@ export default class UserPage extends React.Component<IProps, IState> {
       }
     ).then(
       dataJSON => {
-        if(dataJSON.message = "API rate limit exceeded for user ID 92029462.") {
-          alert(dataJSON.message);
-        }
+        console.log(dataJSON);
         const array: Array<Repo> = dataJSON.items;
         this.setState({repos: array});
       }

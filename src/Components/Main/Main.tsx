@@ -4,6 +4,8 @@ import { User } from '../../Util/Types/User';
 import {UserProfile} from '../../Util/Types/UserProfile';
 import { searchUsers, getUserInfo } from '../../API/GitHub';
 import UserPage from '../UserPage/UserPage';
+import { Octokit } from "octokit";
+
 
 interface IProps {
 }
@@ -45,6 +47,7 @@ export default class MainPage extends React.Component<IProps, IState> {
       }
     ).then(
       dataJSON => {
+        console.log(dataJSON);
         if (dataJSON.message === "Validation Failed") {
           this.setState({users: []});
           return;
