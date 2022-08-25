@@ -48,7 +48,8 @@ export default class MainPage extends React.Component<IProps, IState> {
     ).then(
       dataJSON => {
         console.log(dataJSON);
-        if (dataJSON.message === "Validation Failed") {
+        if (dataJSON.message === "Validation Failed" || dataJSON.message.includes('API rate limit exceeded')) {
+          alert("API rate limit exceeded")
           this.setState({users: []});
           return;
         }
