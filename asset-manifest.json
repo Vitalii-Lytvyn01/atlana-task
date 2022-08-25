@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/atlana-task/static/css/main.83373397.css",
+    "main.js": "/atlana-task/static/js/main.ef30708b.js",
+    "static/js/787.4c6b8bac.chunk.js": "/atlana-task/static/js/787.4c6b8bac.chunk.js",
+    "index.html": "/atlana-task/index.html",
+    "main.83373397.css.map": "/atlana-task/static/css/main.83373397.css.map",
+    "main.ef30708b.js.map": "/atlana-task/static/js/main.ef30708b.js.map",
+    "787.4c6b8bac.chunk.js.map": "/atlana-task/static/js/787.4c6b8bac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.83373397.css",
+    "static/js/main.ef30708b.js"
+  ]
+}
