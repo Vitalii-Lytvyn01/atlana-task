@@ -1,0 +1,86 @@
+.user-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 100vh;
+  padding: 20px 16px;
+  border: 1px solid rgb(175, 175, 175);
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  &__profile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin-bottom: 15px;
+
+
+    .profile__image {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-size: contain;
+    }
+
+    .profile__info {
+      display: flex;
+      flex-direction: column;
+
+      .info-text {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__bio {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  &__search-bar {
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 20px;
+    padding: 0 16px;
+    margin-bottom: 30px;
+  }
+
+  &__repo-list {
+    display: flex;
+    flex-direction: column;
+    height: 45%;
+    width: 100%;
+    overflow: auto;
+    flex-grow: 0;
+
+
+    .repo {
+      padding: 0 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 50px;
+      flex-grow: 0;
+      flex-shrink: 0;
+
+      border: 1px solid rgb(175, 175, 175);
+
+      cursor: pointer;
+
+      &__statistics {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
